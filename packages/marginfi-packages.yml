@@ -1,0 +1,62 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.marginfi.com/sdks
+notes: >-
+  marginfi is an on-chain Solana lending/borrowing protocol; there is no hosted
+  REST API. The supported way to integrate is through the official client SDKs
+  that build and submit transactions against the marginfi-v2 Solana program.
+packages:
+  - language: typescript
+    registry: npm
+    name: "@mrgnlabs/marginfi-client-v2"
+    version: 6.4.2
+    url: https://www.npmjs.com/package/@mrgnlabs/marginfi-client-v2
+    install: npm install @mrgnlabs/marginfi-client-v2
+    source: https://github.com/mrgnlabs/mrgn-ts/tree/main/packages/marginfi-client-v2
+    official: true
+    deprecated: true
+    deprecation_note: >-
+      Marked deprecated on npm; the maintainers point new integrations to the
+      p0-ts-sdk (https://github.com/0dotxyz/p0-ts-sdk) for continued support of
+      the marginfi program.
+  - language: typescript
+    registry: npm
+    name: "@mrgnlabs/mrgn-common"
+    version: 2.0.7
+    url: https://www.npmjs.com/package/@mrgnlabs/mrgn-common
+    install: npm install @mrgnlabs/mrgn-common
+    source: https://github.com/mrgnlabs/mrgn-ts/tree/main/packages/mrgn-common
+    official: true
+    role: Shared helpers/types used alongside the TypeScript SDK.
+  - language: typescript
+    registry: npm
+    name: "@mrgnlabs/mrgn-utils"
+    version: 0.0.2
+    url: https://www.npmjs.com/package/@mrgnlabs/mrgn-utils
+    install: npm install @mrgnlabs/mrgn-utils
+    source: https://github.com/mrgnlabs/mrgn-ts/tree/main/packages/mrgn-utils
+    official: true
+    role: Utility helpers for the marginfi TypeScript stack.
+  - language: python
+    registry: pypi
+    name: marginpy
+    version: 0.1.0a2
+    url: https://pypi.org/project/marginpy/
+    install: pip install marginpy
+    source: https://github.com/mrgnlabs/marginfi-sdk/tree/main/python/marginpy
+    official: true
+    status: alpha
+    role: >-
+      First-party Python SDK for marginfi. Published as an early alpha and not
+      referenced from the current docs SDK page (which lists TypeScript + Rust).
+  - language: rust
+    registry: crates.io
+    name: marginfi-cpi
+    version: 0.1.3
+    url: https://crates.io/crates/marginfi-cpi
+    install: cargo add marginfi-cpi
+    source: https://github.com/mrgnlabs/marginfi-sdk/tree/main/rust/marginfi-cpi
+    official: true
+    role: >-
+      marginfi Cross-Program Invocation (CPI) interface crate for calling the
+      marginfi-v2 program from other Solana programs.

@@ -1,0 +1,36 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.marginfi.com/rust-sdk
+name: marginfi CLI
+language: rust
+description: >-
+  The marginfi CLI is the official Rust command-line interface for interacting
+  with the marginfi protocol directly from the terminal. It lets you use the
+  protocol's borrowing and lending services — for example creating a bank,
+  making deposits to existing banks, and performing other on-chain operations
+  against the marginfi-v2 Solana program.
+docs: https://docs.marginfi.com/rust-sdk
+source_code: https://github.com/mrgnlabs/mrgn-ts
+install:
+  - method: cargo
+    command: cargo install --path .
+    notes: >-
+      Built in Rust; the docs "Installation" section walks through building the
+      CLI from the marginfi source. Verify exact install/build steps against the
+      live docs page as the repository layout evolves.
+surface:
+  - group: Installation
+    docs: https://docs.marginfi.com/rust-sdk
+  - group: Getting Started
+    docs: https://docs.marginfi.com/rust-sdk
+  - group: Subcommands
+    docs: https://docs.marginfi.com/rust-sdk
+    examples:
+      - create a new bank
+      - make deposits to existing banks
+  - group: Examples
+    docs: https://docs.marginfi.com/rust-sdk
+notes: >-
+  The docs label this the "Rust (CLI) SDK". Individual subcommand names are
+  documented on the live SPA docs page (JS-rendered) and are not enumerated here
+  to avoid inventing flags; the source of truth is docs.marginfi.com/rust-sdk.
