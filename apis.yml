@@ -1,9 +1,29 @@
 aid: marginfi
 name: marginfi
-description: 'marginfi is a company surfaced as a portfolio company of multicoin-capital, pantera-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile
-  is a lead awaiting the enrichment pipeline.'
+description: >-
+  marginfi is a decentralized borrowing and lending protocol built on the Solana
+  blockchain by mrgn labs. Users lend supported Solana tokens to earn yield and
+  borrow against supplied collateral, with account-health, e-mode, liquid
+  staking token (LST), and leveraged looping (mrgnloop) products layered on top
+  of the core mrgnlend market. marginfi exposes no hosted REST API — developers
+  integrate on-chain through the marginfi-v2 Solana program using the official
+  TypeScript SDK (marginfi-client-v2, mrgn-common) and the Rust (CLI) SDK, with
+  an early-alpha Python SDK (marginpy) and a Rust CPI interface crate also
+  published. It was surfaced through the API Evangelist network as a portfolio
+  company of Multicoin Capital and Pantera Capital.
 url: https://raw.githubusercontent.com/api-evangelist/marginfi/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://docs.marginfi.com/opengraph-image.jpg
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -13,10 +33,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Crypto Web3
+- DeFi
+- Solana
+- Lending
+- Borrowing
+- Blockchain
+- SDK
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -26,3 +52,30 @@ maintainers:
 common:
 - type: Website
   url: https://marginfi.com
+- type: DeveloperPortal
+  url: https://docs.marginfi.com
+- type: Documentation
+  url: https://docs.marginfi.com
+- type: APIReference
+  url: https://docs.marginfi.com/ts-sdk
+- type: GettingStarted
+  url: https://docs.marginfi.com/introduction
+- type: GitHubOrganization
+  url: https://github.com/mrgnlabs
+- type: SignUp
+  url: https://app.marginfi.com
+- type: Packages
+  url: packages/marginfi-packages.yml
+- type: SDKs
+  url: packages/marginfi-packages.yml
+- type: CLI
+  url: cli/marginfi-cli.yml
+- type: LLMsTxt
+  url: llms/marginfi-llms.txt
+- type: DomainSecurity
+  url: security/marginfi-domain-security.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 4
+  pass: local-v1
